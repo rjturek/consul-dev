@@ -1,3 +1,2 @@
 .vagrant
-shared_data/consul-server-ip
-
+shared_data/consul-leader-ip

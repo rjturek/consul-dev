@@ -10,7 +10,6 @@ Vagrant.configure(2) do |config|
 	config.vm.define "consul1" do |consul1|
 		consul1.vm.network "private_network", ip: "192.168.56.101"
 		consul1.vm.hostname = "consul1"
-#		consul1.vm.network "forwarded_port", guest: 8500, host: 18500
 	end
 
 	# config.vm.define "consul2" do |consul2|
@@ -35,6 +34,7 @@ Vagrant.configure(2) do |config|
 
 	#config.vm.network "private_network", type: "dhcp"
 	config.vm.synced_folder "./shared_data", "/host_shared_data"
+	config.vm.provision :shell, path: "./shared_data/load-tools.sh"
 
 	config.vm.provider "virtualbox" do |vb|
     	vb.memory = "1024"

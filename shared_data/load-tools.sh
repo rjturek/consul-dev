@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo /host_shared_data/hc-workstation-rjt.sh
+sudo /host_shared_data/tools-setup.sh
