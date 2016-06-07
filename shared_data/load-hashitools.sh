@@ -1,1 +1,2 @@
-curl -L hashi.co/hc-workstation | sudo bash
+#!/bin/sh
+sudo /host_shared_data/hc-workstation-rjt.sh
