@@ -40,3 +40,4 @@ Static IPs are assigned as DHCP doesn't work on our environment.
 
 
 http://192.168.56.101:8500/ui
+.
